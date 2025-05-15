@@ -22,7 +22,7 @@ class DoubleLinkedLis{
         cout << "\nEnter the roll number of the student : ";
         cin >> nim;
 
-        //step 1 : Allocate memorty for new node
+        //step 1 : Allocate memory for new node
         Node *newNode = new Node();
 
         //step 2 : Assign value to the data field
