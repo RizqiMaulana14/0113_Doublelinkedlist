@@ -17,6 +17,7 @@ class DoubleLinkedLis{
         DoubleLinkedLis(){
             START = NULL;
         }
+    
     void addNode(){
         int nim;
         cout << "\nEnter the roll number of the student : ";
@@ -38,7 +39,7 @@ class DoubleLinkedLis{
             newNode->next = START;
 
             //step 5 : START.prev = newNode (if START exists)
-            if (START != NULL){
+            if (START != NULL)
                 START->prev = newNode;
 
                 //step 6 : newNode.prev = NULL
@@ -47,7 +48,6 @@ class DoubleLinkedLis{
                 //step 7 : START = newNode
                 START = newNode;
                 return;
-            }
         }
 
         //insert in between node
@@ -67,9 +67,17 @@ class DoubleLinkedLis{
         newNode->prev = current;        // step 9b : newNode.prev = current
 
         //insert last node
-        if (current->next != NULL){
+        if (current->next != NULL)
             current->next->prev = newNode;  //step 9c : current.next.prev = newNode
             current->next = newNode;        //step 9d : current.next = newNode
+    }
+
+    void hapus(){
+        if (START == NULL){
+            cout << "\nList is empty" << endl;
+            return;
         }
+
+
     }
 };
