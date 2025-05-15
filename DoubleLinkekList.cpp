@@ -46,7 +46,12 @@ class DoubleLinkedLis{
 
                 //step 7 : START = newNode
                 START = newNode;
-                return;            
+                return;
         }
+
+        //insert in between node
+        //step 8 : locate psisition for insertion
+        Node *current = START;
+        while(current->next != NULL && current->next->noMhs <nim)
     }
 };
