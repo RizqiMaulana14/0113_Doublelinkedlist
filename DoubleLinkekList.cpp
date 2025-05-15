@@ -9,12 +9,12 @@ class Node{
         Node *prev;    
 };
 
-class DoubleLinkedLis{
+class DoubleLinkedList{
     private:
         Node *START;
     
     public:
-        DoubleLinkedLis(){
+        DoubleLinkedList(){
             START = NULL;
         }
     
@@ -187,3 +187,9 @@ class DoubleLinkedLis{
         }
     }
 };
+
+int main(){
+    DoubleLinkedList list;
+    char choice;
+
+}
