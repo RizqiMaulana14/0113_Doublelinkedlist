@@ -101,7 +101,13 @@ class DoubleLinkedLis{
                 START->prev = NULL;     //step 2b : START.prev = NULL
             }
         }
+        else{
+            // Step 3 : Link Previous node to next of current
+            current->prev->next = current->next;
 
-        
+            // Step 4 : If current is not the last node
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+        }
     }
 };
